@@ -20,12 +20,13 @@ pip install -r requirements.txt
 
 ### Extract pairs of sentence and headline
 Extract raw data (sentence and headline) from Chinese Gigaword Third Version. Downlaod [Chinese Gigaword Third Version](https://catalog.ldc.upenn.edu/LDC2007T38) and there are four folders, i.e., ```afp_cmn```, ```cna_cmn```, ```xin_cmn```, ```zbn_cmn``` under gigawords dataset folder. Put ```afp_cmn```, ```cna_cmn```, ```xin_cmn```, ```zbn_cmn```, ```zh_wiki.py```, ```langconv.py```, ```data_processing.py``` in the same  directory. Please refer to [Chinese Gigaword Third Version](https://catalog.ldc.upenn.edu/LDC2007T38) for details of these folders. 
- - Step 1: Extract tirst sentence and headline of each news article.
- - Step 2: Clean text by removing non-English text and strange punctuation.
- - Step 3: Tokenize the headline and the first sentence using jieba within the Stanza NLP pipeline to identify content words through part-of-speech tags.
- - Step 4: Filter out the cases where length requirement is not satisfied according to the rules in Appendix A of the paper.
+ - step 1: Extract tirst sentence and headline of each news article.
+ - step 2: Clean text by removing non-English text and strange punctuation.'
+ - step 3: Remove all sentences containing tradictional Chinese chracters as there were a lot of parsing errors for tradictional Chinese words, which will affect dependecy tree transformation a lot.
+ - step 4: Tokenize the headline and the first sentence using jieba within the Stanza NLP pipeline to identify content words through part-of-speech tags.
+ - step 5: Filter out the cases where length requirement is not satisfied according to the rules in Appendix A of the paper.
 
-Run `data_processing.py` to implement Step 1-5.
+Run `data_processing.py` to implement step 1-5.
 ```bash
 python data_processing.py 
 ```
