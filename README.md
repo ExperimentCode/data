@@ -33,6 +33,7 @@ python data_processing.py
 
 After the above processing, you will get two output files in the same directory, ```data_s_parse.txt``` and ```data_h_parse.txt```, the parsed sentences and parsed headlines. 
 
-### contructed pairs of sentence and deletion-based compression
+### constructed pairs of sentence and deletion-based compression
+
 
 
