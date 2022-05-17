@@ -6,9 +6,9 @@
  - [Data_Annotation-1 download](https://github.com/ExperimentCode/data/blob/main/data_annotation-2_1k.txt)
 
 
-## 151k pairs of sentence and compression
+## Extract pairs of sentence and compression
 
-We herein describe how we constructed 151k pairs of sentences and compression step by step. 
+We herein describe how we extracted 150k+ pairs of sentences and compression step by step. 
 
 ### Environment setup
  - Please install the necessary packages by cloning this repo and run:
@@ -18,7 +18,7 @@ pip install -r requirements.txt
 ```
  - Download [langconv.py](https://raw.githubusercontent.com/skydark/nstools/master/zhtools/langconv.py) and [zh_wiki.py](https://raw.githubusercontent.com/skydark/nstools/master/zhtools/zh_wiki.py) and put both .py files in the same directory as the following `data_processing.py` script.
 
-### Extract pairs of sentence and headline
+### Raw data extraction
 Extract raw data (sentence and headline) from Chinese Gigaword Third Version. Downlaod [Chinese Gigaword Third Version](https://catalog.ldc.upenn.edu/LDC2007T38) and there are four folders, i.e., ```afp_cmn```, ```cna_cmn```, ```xin_cmn```, ```zbn_cmn``` under gigawords dataset folder. Put ```afp_cmn```, ```cna_cmn```, ```xin_cmn```, ```zbn_cmn```, ```zh_wiki.py```, ```langconv.py```, ```data_processing.py``` in the same  directory. Please refer to [Chinese Gigaword Third Version](https://catalog.ldc.upenn.edu/LDC2007T38) for details of these folders. 
  - step 1: Extract tirst sentence and headline of each news article.
  - step 2: Clean text by removing non-English text and strange punctuation.'
@@ -33,7 +33,7 @@ python data_processing.py
 
 After the above processing, you will get two output files in the same directory, ```data_s_parse.txt``` and ```data_h_parse.txt```, the parsed sentences and parsed headlines. 
 
-### constructed pairs of sentence and deletion-based compression
+## Constructed pairs of sentence and deletion-based compression
 
 
 
