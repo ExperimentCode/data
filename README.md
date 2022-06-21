@@ -1,5 +1,5 @@
 # Constructed Datasets
-***Please contact yangzhao@ibm.com if you would like to use 1k compression dataset for commercial purpose (research use is fine) ***
+***Please contact yangzhao@ibm.com if you would like to use 1k compression dataset for any commercial purpose (research use is totally fine) ***
 ## 1k Annotated Compression Dataset 
  - We tokenized 1k sentences with jieba tokenizer and asked two human annotaters to label "1" or "0" for each word in the sentences. "1" refers to keeping word whereas "0" refers to deleting it.
  - [Data_Annotation-1 download](https://github.com/ExperimentCode/data/blob/main/data_annotation-1_1k.txt)
