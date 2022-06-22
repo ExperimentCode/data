@@ -16,7 +16,6 @@ We herein describe how we extracted 150k+ pairs of sentences and compression ste
 ```bash
 pip install -r requirements.txt 
 ```
- - Download [langconv.py](https://raw.githubusercontent.com/skydark/nstools/master/zhtools/langconv.py) and [zh_wiki.py](https://raw.githubusercontent.com/skydark/nstools/master/zhtools/zh_wiki.py) and put both .py files in the same directory as the `data_processing.py` script.
 
 ### Step 1 - Extract raw sentence and headline 
 Extract raw data (sentence and headline) from Chinese Gigaword Third Version. Downlaod [Chinese Gigaword Third Version](https://catalog.ldc.upenn.edu/LDC2007T38) and there are four folders, i.e., ```afp_cmn```, ```cna_cmn```, ```xin_cmn```, ```zbn_cmn``` under gigawords dataset folder. Put ```afp_cmn```, ```cna_cmn```, ```xin_cmn```, ```zbn_cmn```, ```zh_wiki.py```, ```langconv.py```, ```data_processing.py``` in the same  directory. Please refer to [Chinese Gigaword Third Version](https://catalog.ldc.upenn.edu/LDC2007T38) for details of these folders. 
