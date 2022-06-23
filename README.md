@@ -6,7 +6,7 @@
  - [Data_Annotation-1 download](https://github.com/ExperimentCode/data/blob/main/data_annotation-2_1k.txt)
 
 
-## 151k construction pairs of sentence and compression
+## 150k+ construction pairs of sentence and compression
 
 We herein describe how we extracted 150k+ pairs of sentences and compression step by step. 
 
